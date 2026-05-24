@@ -1,0 +1,79 @@
+name: syllabustride
+description: Production-grade mobile app for students to manage their academic syllabus, track assignments, and stay organized. Powered by Flutter, Appwrite, and Clerk.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP & Networking
+  http: ^1.1.0
+  dio: ^5.3.0
+
+  # State Management
+  provider: ^6.0.0
+  riverpod: ^2.4.0
+
+  # Backend Services (Appwrite)
+  appwrite: ^14.0.0
+
+  # Authentication (Clerk)
+  flutter_appauth: ^6.1.0
+
+  # Local Database & Storage
+  sqflite: ^2.3.0
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # UI & UX
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.7
+  smooth_page_indicator: ^1.1.0
+  intl: ^0.19.0
+
+  # Utilities
+  uuid: ^4.0.0
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  file_picker: ^6.1.1
+
+  # Error Tracking (Sentry)
+  sentry_flutter: ^7.85.0
+
+  # Logging
+  logger: ^2.0.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.6
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
